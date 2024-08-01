@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHeader"
+        android:layout_above="@+id/classifytext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="RESULT"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classifytext"
+        android:layout_above="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="_ _ _ _ _ _ _ _ _ _"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_background"
+        android:layout_marginLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/insert"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image">
+    </ImageView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classify"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Classify"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:text="Search on Google"
+        android:onClick="searchOnGoogle" />
+
+</RelativeLayout>

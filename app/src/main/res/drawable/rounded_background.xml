@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="10dp" /> <!-- Atur radius sesuai keinginan Anda -->
+    <solid android:color="@color/colorPrimary" /> <!-- Ganti warna latar belakang sesuai keinginan Anda -->
+</shape>
